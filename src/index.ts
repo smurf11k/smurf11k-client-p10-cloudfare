@@ -4,7 +4,7 @@ import { basicAuth } from 'hono/basic-auth'
 const app = new Hono()
 
 // Public route
-app.get('/', (c) => c.text('Hello Cloudflare Workers!'))
+app.get('/', (c) => c.text('Hello New Cloudflare Workers!'))
 
 // Basic auth middleware for all /api routes
 app.use('/api/*', basicAuth({
